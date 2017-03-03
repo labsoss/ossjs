@@ -1,0 +1,7 @@
+[user]
+    name = Labs
+    email = my.labs.oss@gmail.com
+
+[github]
+    user = labsoss
+    token = [SECRET]

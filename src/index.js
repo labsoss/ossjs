@@ -1,7 +1,20 @@
 var uniqueRndArr = require('unique-random-array');
 var books = require("./books.json");
+var getRndBook = uniqueRndArr(books);
 
 module.exports = {
     all: books,
-    random: uniqueRndArr(books)
+    random: function(count) {
+        if(count === undefined) {
+            return getRndBook();
+        }
+        else {
+            var books = [];
+            for(var i = 0; i < count; i++) {
+                books.push(getRndBook());
+            }
+
+            return books;
+        }
+    }
 };

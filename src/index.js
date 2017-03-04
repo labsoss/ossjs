@@ -1,5 +1,6 @@
-var uniqueRndArr = require('unique-random-array');
-var books = require("./books.json");
+import uniqueRndArr from 'unique-random-array';
+import books from './books.json';
+
 var getRndBook = uniqueRndArr(books);
 
 module.exports = {
